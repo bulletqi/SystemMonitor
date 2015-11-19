@@ -1,3 +1,4 @@
 # SystemMonitor
 SystemMonitor
-For system monitor
+auth: Fritz
+This software is for mem,cpu monitor 
