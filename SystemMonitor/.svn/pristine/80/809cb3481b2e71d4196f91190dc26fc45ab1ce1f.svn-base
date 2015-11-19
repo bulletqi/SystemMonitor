@@ -1,0 +1,45 @@
+wrapper.java.command=java
+#wrapper.java.command=%JAVA_HOME%/bin/java
+wrapper.java.mainclass=com.newegg.monitor.WrapperAppMain
+wrapper.java.classpath.1=../lib/*.jar
+wrapper.java.library.path.1=./
+
+
+wrapper.java.additional.auto_bits=TRUE
+wrapper.app.parameter.1=http://127.0.0.1/probe/put
+wrapper.app.parameter.2=30000
+wrapper.java.additional.1=
+wrapper.java.initmemory=256
+wrapper.java.maxmemory=512
+
+wrapper.console.format=PM
+wrapper.console.loglevel=INFO
+wrapper.logfile=../logs/wrapper.log
+wrapper.logfile.format=LPTM
+wrapper.logfile.loglevel=INFO
+wrapper.logfile.maxsize=0
+wrapper.logfile.maxfiles=0
+wrapper.syslog.loglevel=NONE
+wrapper.ignore_sequence_gaps=TRUE
+wrapper.pidfile.strict=TRUE
+wrapper.console.title=Test Wrapper Sample Application
+wrapper.check.deadlock=TRUE
+wrapper.check.deadlock.interval=600
+wrapper.ping.timeout=120
+wrapper.check.deadlock.action=RESTART
+wrapper.check.deadlock.output=FULL
+wrapper.filter.trigger.1000=[Loaded java.lang.OutOfMemoryError
+wrapper.filter.action.1000=NONE
+wrapper.filter.trigger.1001=java.lang.OutOfMemoryError
+wrapper.filter.action.1001=RESTART
+wrapper.filter.message.1001=The JVM has run out of memory.
+wrapper.event.jvm_restart.email.body=The JVM was restarted.\n\nPlease check on its status.\n
+
+
+wrapper.name=System-Monitor
+wrapper.displayname=System-Monitor
+wrapper.description=System-Monitor
+wrapper.ntservice.dependency.1=
+wrapper.ntservice.starttype=AUTO_START
+wrapper.ntservice.interactive=false
+
